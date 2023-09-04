@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+  <div class="newsletter__body active">
+
+    <div class="newsletter__section-singup">
+      <div class="newsletter__text-body">
+        <h3 class="newsletter__title">Stay updated!</h3>
+        <p class="newsletter__title-description">Join 60,000+ product managers receiving monthly updates on:</p>
+        <p class="newsletter__list"><img src="./images/icon-list.svg" class="newsletter__icon-list">Product discovery
+          and building what matters</p>
+        <p class="newsletter__list"><img src="./images/icon-list.svg" class="newsletter__icon-list">Measuring to ensure
+          updates are a success</p>
+        <p class="newsletter__list"><img src="./images/icon-list.svg" class="newsletter__icon-list">And much more!</p>
+        <form class="newsletter__singup-box">
+          <p class="error-text">Valid email required</p>
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="email@company.com">
+        </form>
+        <button type="submit" class="newsletter__submitBtn">Subscribe to monthly newsletter</button>
+      </div>
+    </div>
+
+    <div class="newsletter__section-img">
+      <div class="newsletter__hero-img"></div>
+    </div>
+
+  </div>
+
+  <div class="popup popup-active">
+    <div class="popup__message-text">
+      <img src="./images/icon-success.svg">
+      <h3 class="popup__title">Thanks for subscribing!</h3>
+      <p class="popup__title-description"> A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <button type="submit" class="popup__closeBtn">Dismiss message</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
